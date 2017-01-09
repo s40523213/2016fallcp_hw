@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./</loc>
-<lastmod>2017-01-09T14:56:01-00:00</lastmod>
+<lastmod>2017-01-09T15:23:03-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./archives.html</loc>
-<lastmod>2017-01-09T14:56:01-00:00</lastmod>
+<lastmod>2017-01-09T15:23:03-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tags.html</loc>
-<lastmod>2017-01-09T14:56:01-00:00</lastmod>
+<lastmod>2017-01-09T15:23:03-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./categories.html</loc>
-<lastmod>2017-01-09T14:56:01-00:00</lastmod>
+<lastmod>2017-01-09T15:23:03-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -41,6 +41,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>./2016fallcp-qi-mo-kao-zhou.html</loc>
 <lastmod>2017-01-09T13:20:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./w10-brython-hui-tu-fan-li.html</loc>
+<lastmod>2016-11-14T13:20:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -102,6 +109,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>./tag/ping-fen.html</loc>
+<lastmod>2016-11-05T12:00:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./tag/shi-yong-dao-yin.html</loc>
+<lastmod>2016-11-04T12:00:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>./tag/chuang-zao-li.html</loc>
 <lastmod>2016-09-02T12:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
@@ -123,20 +144,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>./tag/shi-yong-dao-yin.html</loc>
-<lastmod>2016-11-04T12:00:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>./tag/ping-fen.html</loc>
-<lastmod>2016-11-05T12:00:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>./tag/biao-da-neng-li.html</loc>
 <lastmod>2016-09-02T12:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
@@ -144,7 +151,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>./author/40523216.html</loc>
+<loc>./author/40523213.html</loc>
 <lastmod>2017-01-09T13:20:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
