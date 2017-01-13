@@ -1,5 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall CPB 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2016-11-04T12:00:00+08:00</updated><entry><title>2016Fall CP 期中練習</title><link href="./2016fall-cp-qi-zhong-lian-xi.html" rel="alternate"></link><published>2016-11-04T12:00:00+08:00</published><updated>2016-11-04T12:00:00+08:00</updated><author><name>yen</name></author><id>tag:,2016-11-04:./2016fall-cp-qi-zhong-lian-xi.html</id><summary type="html">&lt;p&gt;從 &lt;a href="http://www.rfc-editor.org/search/rfc_search_detail.php?page=All&amp;title=ipv6&amp;pubstatus%5B%5D=Any&amp;pub_date_type=any&amp;sortkey=Number&amp;sorting=ASC%22"&gt;IPV6 相關 RFCs 查詢&lt;/a&gt;得到的資料中, 如何在各組的網誌中整理一份能夠連結到各個未過時 (non-obsolete) 的 RFC 文件?&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall CPB 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2017-01-13T13:35:00+08:00</updated><entry><title>2016fallcp期末報告</title><link href="./2016fallcpqi-mo-bao-gao.html" rel="alternate"></link><published>2017-01-13T13:35:00+08:00</published><updated>2017-01-13T13:35:00+08:00</updated><author><name>s40523213</name></author><id>tag:,2017-01-13:./2016fallcpqi-mo-bao-gao.html</id><summary type="html">&lt;p&gt;期末考週&lt;/p&gt;
+
+
+&lt;!-- 導入 Brython 標準程式庫 --&gt;
+
+&lt;script type="text/javascript" 
+    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
+&lt;/script&gt;
+
+&lt;!-- 啟動 Brython --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下實際利用  Brython 畫兩條直線 --&gt;
+
+&lt;canvas id="japanflag1" width="600" height="600"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+from browser import document as doc
+import math
+# 準備繪圖畫布
+canvas = doc["japanflag1"]
+ctx = canvas.getContext("2d")
+
+ctx.beginPath()
+ctx.fillStyle = 'black'
+ctx.strokeStyle = "black"
+ctx.arc(250, 200, 19, 0, 2*math.pi, False)
+ctx.fill()
+ctx.stroke()
+ctx.closePath()
+
+
+ctx.beginPath()
+ctx.fillStyle = 'black'
+ctx.strokeStyle = "black"
+ctx.arc(350, 200, 19, 0, 2*math.pi, False)
+ctx.fill()
+ctx.stroke()
+ctx.closePath()
+
+'''
+ctx.beginPath()
+ctx.fillStyle = 'black'
+ctx.font = "16px Arial"
+ctx.fillText("2", 105, 95)
+ctx.fill()
+ctx.stroke()
+ctx.closePath()
+'''
+
+
+# 以下可以利用 ctx 物件進行畫圖
+# 先畫一條直線
+ctx.beginPath()
+# 設定線的寬度為 1 個單位
+ctx.lineWidth = 1
+
+ctx.moveTo(200, 100)
+ctx.lineTo(400, 100)
+
+ctx.moveTo(450, 150)
+ctx.lineTo(400, 100)
+
+ctx.moveTo(450, 150)
+ctx.lineTo(450, 250)
+
+ctx.moveTo(340, 350)
+ctx.lineTo(450, 250)
+
+ctx.moveTo(340, 350)
+ctx.lineTo(324, 350)
+
+ctx.moveTo(324, 320)
+ctx.lineTo(324, 350)      
+
+
+ctx.moveTo(324, 320)
+ctx.lineTo(308, 320) 
+
+ctx.moveTo(308, 350)
+ctx.lineTo(308, 320)
+
+ctx.moveTo(308, 350)
+ctx.lineTo(292, 350)   
+
+ctx.moveTo(292, 320)
+ctx.lineTo(292, 350)  
+
+ctx.moveTo(292, 320)
+ctx.lineTo(276, 320) 
+
+ctx.moveTo(276, 350)
+ctx.lineTo(276, 320) 
+
+ctx.moveTo(276, 350)
+ctx.lineTo(260, 350)
+
+ctx.moveTo(150, 250)
+ctx.lineTo(260, 350)  
+
+ctx.moveTo(150, 250)
+ctx.lineTo(150, 150)
+
+ctx.moveTo(200, 100)
+ctx.lineTo(150, 150) 
+
+####    下巴
+
+
+ctx.moveTo(340, 370)
+ctx.lineTo(340, 420)     
+
+ctx.moveTo(260, 420)
+ctx.lineTo(340, 420)  
+
+ctx.moveTo(260, 420)
+ctx.lineTo(260, 370) 
+
+ctx.moveTo(276, 370)
+ctx.lineTo(260, 370) 
+
+ctx.moveTo(276, 370)
+ctx.lineTo(276, 390)
+
+ctx.moveTo(292, 390)
+ctx.lineTo(276, 390)
+
+ctx.moveTo(292, 390)
+ctx.lineTo(292, 370)
+
+ctx.moveTo(308, 370)
+ctx.lineTo(292, 370)
+
+ctx.moveTo(308, 370)
+ctx.lineTo(308, 390)
+
+ctx.moveTo(324, 390)
+ctx.lineTo(308, 390)
+
+
+ctx.moveTo(324, 390)
+ctx.lineTo(324, 370)
+
+ctx.moveTo(340, 370)
+ctx.lineTo(324, 370)
+
+####鼻子
+ctx.strokeRect(287.5,250,25,15)
+
+# 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+ctx.strokeStyle = "blue"
+# 實際執行畫線
+ctx.stroke()
+ctx.closePath()
+&lt;/script&gt;</summary><category term="每週練習"></category></entry><entry><title>2016Fall CP 期中練習</title><link href="./2016fall-cp-qi-zhong-lian-xi.html" rel="alternate"></link><published>2016-11-04T12:00:00+08:00</published><updated>2016-11-04T12:00:00+08:00</updated><author><name>yen</name></author><id>tag:,2016-11-04:./2016fall-cp-qi-zhong-lian-xi.html</id><summary type="html">&lt;p&gt;從 &lt;a href="http://www.rfc-editor.org/search/rfc_search_detail.php?page=All&amp;title=ipv6&amp;pubstatus%5B%5D=Any&amp;pub_date_type=any&amp;sortkey=Number&amp;sorting=ASC%22"&gt;IPV6 相關 RFCs 查詢&lt;/a&gt;得到的資料中, 如何在各組的網誌中整理一份能夠連結到各個未過時 (non-obsolete) 的 RFC 文件?&lt;/p&gt;
 
 
 &lt;p&gt;參考程式碼:&lt;/p&gt;
